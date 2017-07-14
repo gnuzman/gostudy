@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+//import "./myPkg"
 
 // 1.变量
 // 2.函数
