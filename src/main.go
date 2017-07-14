@@ -73,4 +73,14 @@ func main() {
 	fmt.Println(myBook.book_id, myBook.author, myBook.title, myBook.subject)
 	fmt.Println(myPtr.book_id, myPtr.author, myPtr.title, myPtr.subject)
 
+	numbers := []int{0,1,2,3,4,5,6,7,8}
+	printSlice(numbers)
+	numbers1 := make([]int,4,5)
+	printSlice(numbers1)
+
+
+}
+
+func printSlice(x []int){
+	fmt.Printf("len=%d cap=%d slice=%v\n",len(x),cap(x),x)
 }
