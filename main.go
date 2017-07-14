@@ -6,7 +6,17 @@ import "fmt"
 // 2.函数
 // 3.循环
 // 4.外部调用
+func test1()(string) {
+	return "test"
+}
 
+func test2(p1 string, p2 string)(string, string) {
+	return p2, p1
+}
+
+func test3(p1 string, p2 int)(int, string) {
+	return p2, p1
+}
 
 func main() {
 	fmt.Println("gggfff")
@@ -30,5 +40,9 @@ func main() {
 	for m := 0; m < 10; m++ {
 		fmt.Println(m)
 	}
+
+	fmt.Println(test1())
+	fmt.Println(test2("1", "2"))
+	fmt.Println(test3("10", 11))
 
 }
